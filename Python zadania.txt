@@ -1,0 +1,47 @@
+# Liczenie pola prostokąta
+def pole_prostokata(dlugosc, szerokosc):
+    return dlugosc * szerokosc
+pole = pole_prostokata(5, 3)
+print("Pole prostokąta:", pole)
+
+# Przedstawienie ucznia imie i wiek
+def uczen(imie, wiek=18):
+    return f"Uczeń ma na imię {imie} i ma {wiek} lat."
+print(uczen("Kuba", 16))
+print(uczen("Ania"))
+
+# Obliczenia
+def dodaj(a, b):
+    return a + b
+def odejmij(a, b):
+    return a - b
+def pomnoz(a, b):
+    return a * b
+def podziel(a, b):
+    return a / b
+print(dodaj(10, 5))
+print(odejmij(10, 5))
+print(pomnoz(10, 5))
+print(podziel(10, 5))
+print(dodaj(20, 30))
+print(pomnoz(4, 6))
+
+# Cena biletu dla odpowiedniego wieku
+def cena_biletu(wiek, cena_podstawowa=30):
+    if wiek < 12:
+        return 15
+    elif wiek <= 17:
+        return 20
+    else:
+        return cena_podstawowa
+print("Bilet dla osoby w wieku 8 lat:", cena_biletu(8), "zł")
+print("Bilet dla osoby w wieku 15 lat:", cena_biletu(15), "zł")
+print("Bilet dla osoby w wieku 25 lat:", cena_biletu(25), "zł")
+print("Bilet dla osoby w wieku 30 lat:", cena_biletu(30, 40), "zł")
+
+# Liczenie ceny produktów 
+def produkt(nazwa: str, cena: float, sztuki: int) -> float:
+    return cena * sztuki
+wartosc = produkt(nazwa="Laptop", cena=3000, sztuki=2)
+print("Produkt:", "Laptop")
+print("Całkowita wartość:", wartosc, "zł")
